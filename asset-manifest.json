@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/people-map/static/css/main.285cefc5.css",
+    "main.js": "/people-map/static/js/main.95b47fe4.js",
+    "static/media/fa-solid-900.svg": "/people-map/static/media/fa-solid-900.4eb6043220be660d50c5.svg",
+    "static/media/fa-brands-400.svg": "/people-map/static/media/fa-brands-400.c02d7d9389ae7e1b28be.svg",
+    "static/media/ionicons.svg?v=4.5.5": "/people-map/static/media/ionicons.74d1410980e8dabb67a0.svg",
+    "static/media/fa-solid-900.eot": "/people-map/static/media/fa-solid-900.dc4cd499c4e39885ce89.eot",
+    "static/media/fa-solid-900.ttf": "/people-map/static/media/fa-solid-900.8fb677a95f4d1a60a535.ttf",
+    "static/media/fa-regular-400.svg": "/people-map/static/media/fa-regular-400.75ec6f4859d31ffaece8.svg",
+    "static/media/fa-brands-400.eot": "/people-map/static/media/fa-brands-400.469ff15e72ceda3868c7.eot",
+    "static/media/fa-brands-400.ttf": "/people-map/static/media/fa-brands-400.686336e914dbcd5bc20d.ttf",
+    "static/media/ionicons.eot?v=4.5.5": "/people-map/static/media/ionicons.a014cf6987657a489eaa.eot",
+    "static/media/ionicons.ttf?v=4.5.5": "/people-map/static/media/ionicons.576a3a02948f7f5140b2.ttf",
+    "static/media/Material-Design-Iconic-Font.ttf?v=2.2.0": "/people-map/static/media/Material-Design-Iconic-Font.5a588d6a8bfc41d69f88.ttf",
+    "static/media/fa-solid-900.woff": "/people-map/static/media/fa-solid-900.230d39e89103765834b3.woff",
+    "static/media/fa-brands-400.woff": "/people-map/static/media/fa-brands-400.ecbd4c551abdab14dade.woff",
+    "static/media/fa-brands-400.woff2": "/people-map/static/media/fa-brands-400.d5a5eb19947a21cc9b89.woff2",
+    "static/media/fa-solid-900.woff2": "/people-map/static/media/fa-solid-900.867bbaaf9dda15b203dd.woff2",
+    "static/media/ionicons.woff?v=4.5.5": "/people-map/static/media/ionicons.ef35f15cc09a26825792.woff",
+    "static/media/ionicons.woff2?v=4.5.5": "/people-map/static/media/ionicons.175f391f238cd7deffa8.woff2",
+    "static/media/Material-Design-Iconic-Font.woff?v=2.2.0": "/people-map/static/media/Material-Design-Iconic-Font.bd9b02bf1131d90bfe22.woff",
+    "static/media/Material-Design-Iconic-Font.woff2?v=2.2.0": "/people-map/static/media/Material-Design-Iconic-Font.6ee80f4bf5d3f92f3bf7.woff2",
+    "static/media/fa-regular-400.eot": "/people-map/static/media/fa-regular-400.9dfcdc0f7d840f913a76.eot",
+    "static/media/fa-regular-400.ttf": "/people-map/static/media/fa-regular-400.9c9c54c0abf3b8a46695.ttf",
+    "static/media/fa-regular-400.woff": "/people-map/static/media/fa-regular-400.c579c7d9be63a3337b96.woff",
+    "static/media/fa-regular-400.woff2": "/people-map/static/media/fa-regular-400.73b2218024541ec4e90d.woff2",
+    "index.html": "/people-map/index.html",
+    "main.285cefc5.css.map": "/people-map/static/css/main.285cefc5.css.map",
+    "main.95b47fe4.js.map": "/people-map/static/js/main.95b47fe4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.285cefc5.css",
+    "static/js/main.95b47fe4.js"
+  ]
+}
