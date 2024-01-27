@@ -1,9 +1,10 @@
 # People Map
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Notable libraries being used:
-* React with TypeScript
-* [Onsen UI](https://onsen.io/)
-* [React Leaflet](https://react-leaflet.js.org/)
+
+- React with TypeScript
+- [Onsen UI](https://onsen.io/)
+- [React Leaflet](https://react-leaflet.js.org/)
 
 ## Available Scripts
 
