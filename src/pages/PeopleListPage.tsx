@@ -1,5 +1,5 @@
 import React from 'react';
-import {Page, List, Toolbar, ProgressCircular, PullHook, Toast} from 'react-onsenui';
+import { Page, List, Toolbar, ProgressCircular, Button, Icon } from 'react-onsenui';
 import PersonListItem from '../components/PersonListItem';
 import { Person } from '../types';
 import { usePeople } from '../context/PeopleContext';
@@ -19,11 +19,6 @@ const PeopleListPage = ({ navigator }: PeopleListPageProps) => {
         });
     };
 
-    // pull to refresh
-    const handleRefresh = (done: () => void) => {
-        fetchPeople().finally(done);
-    };
-
     return (
         <Page renderToolbar={() =>
             // @ts-ignore
@@ -31,26 +26,33 @@ const PeopleListPage = ({ navigator }: PeopleListPageProps) => {
                 <div className="center">All Friends</div>
             </Toolbar>
         }>
-            <PullHook onLoad={handleRefresh} />
-            {isLoading ? (
-                <div style={{display: 'flex', justifyContent: 'center', paddingTop: '50px' }}>
+            {isLoading && (
+                <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '50px' }}>
                     <ProgressCircular indeterminate />
                 </div>
-            ) : (
-                <List dataSource={people} renderRow={(person: Person) => (
-                    <PersonListItem
-                        key={person._id}
-                        id={person._id}
-                        name={`${person.name.first} ${person.name.last}`}
-                        picture={person.picture}
-                        onClick={() => showPersonDetail(person)}
-                    />
-                )} />
             )}
-            {
-                //@ts-ignore
-                error && <Toast isOpen={!!error}>{error}</Toast>
-            }
+
+            {error && (
+                <div style={{ textAlign: 'center', marginTop: '20px' }}>
+                    <p>{error}</p>
+                    {
+                        //@ts-ignore
+                        <Button onClick={fetchPeople} modifier='outline'>
+                            <Icon icon="md-refresh" /> Retry
+                        </Button>
+                    }
+                </div>
+            )}
+
+            <List dataSource={people} renderRow={(person: Person) => (
+                <PersonListItem
+                    key={person._id}
+                    id={person._id}
+                    name={`${person.name.first} ${person.name.last}`}
+                    picture={person.picture}
+                    onClick={() => showPersonDetail(person)}
+                />
+            )} />
         </Page>
     );
 };
