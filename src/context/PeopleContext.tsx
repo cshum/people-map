@@ -40,7 +40,6 @@ export const PeopleProvider = ({ children }: PeopleProviderProps) => {
       }
     } catch (error) {
       setError('Failed to fetch people.');
-      console.error(error);
     } finally {
       setIsLoading(false);
     }

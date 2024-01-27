@@ -48,7 +48,7 @@ const PeopleListPage = ({ navigator }: PeopleListPageProps) => {
       )}
 
       {error && (
-        <div style={{ textAlign: 'center', marginTop: '20px' }}>
+        <div style={{ textAlign: 'center', margin: '20px 0' }}>
           <p>{error}</p>
           {
             //@ts-ignore

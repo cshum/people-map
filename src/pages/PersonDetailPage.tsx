@@ -1,9 +1,8 @@
 import React from 'react';
-import { BackButton, Page, Toolbar } from 'react-onsenui';
+import { BackButton, ListItem, Page, Toolbar } from 'react-onsenui';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import { Person } from '../types';
 import { LatLngTuple } from 'leaflet';
-import PersonListItem from '../components/PersonListItem';
 
 interface PersonDetailPageProps {
   navigator: any; // Onsen UI navigator
@@ -45,12 +44,21 @@ const PersonDetailPage = ({ person, navigator }: PersonDetailPageProps) => {
         <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
         {position && <Marker position={position} />}
       </MapContainer>
-      <PersonListItem
-        key={person._id}
-        id={person._id}
-        name={`${person.name.first} ${person.name.last}`}
-        picture={person.picture}
-      />
+      <ListItem key={person._id}>
+        <div className='left'>
+          <img
+            className='list-item__thumbnail'
+            src={person.picture}
+            alt={`${person.name.first} ${person.name.last}`}
+          />
+        </div>
+        <div className='center'>
+          <span className='list-item__title'>{`${person.name.first} ${person.name.last}`}</span>
+          <span className='list-item__subtitle'>
+            <a href={`mailto:${person.email}`}>{person.email}</a>
+          </span>
+        </div>
+      </ListItem>
     </Page>
   );
 };

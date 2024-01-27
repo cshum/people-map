@@ -15,7 +15,7 @@ const PersonListItem = ({
   onClick,
 }: PersonListItemProps) => {
   return (
-    <ListItem key={id} tappable={!!onClick} onClick={onClick}>
+    <ListItem key={id} onClick={onClick} tappable={!!onClick}>
       <div className='left'>
         <img className='list-item__thumbnail' src={picture} alt={name} />
       </div>
