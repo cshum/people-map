@@ -16,6 +16,8 @@ const App = () => {
             <Navigator
                 initialRoute={{ component: PeopleListPage, props: { key: 'peopleListPage' } }}
                 renderPage={renderPage}
+                // @ts-ignore
+                swipeable={true}
             />
         </PeopleProvider>
     );
