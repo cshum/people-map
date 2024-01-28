@@ -5,8 +5,9 @@ import React, {
   useEffect,
   ReactNode,
 } from 'react';
-import { Person } from '../types';
+import { ErrorResponse, Person } from '../types';
 import { listPeople } from '../services/peopleService';
+import { isAxiosError } from 'axios';
 
 interface PeopleProviderProps {
   children: ReactNode;
@@ -39,7 +40,11 @@ export const PeopleProvider = ({ children }: PeopleProviderProps) => {
         setPeople(data);
       }
     } catch (error) {
-      setError('Failed to fetch people.');
+      if (isAxiosError<ErrorResponse>(error) && error.response) {
+        setError(error.response.data.error);
+      } else {
+        setError('Failed to fetch data.');
+      }
     } finally {
       setIsLoading(false);
     }

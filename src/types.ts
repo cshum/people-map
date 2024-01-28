@@ -15,3 +15,7 @@ export interface Person {
   picture: string;
   location: Location;
 }
+
+export interface ErrorResponse {
+  error: string;
+}
